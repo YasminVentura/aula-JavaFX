@@ -1,6 +1,8 @@
-package org.example.javafxproject;
+package gui;
 
+import gui.util.Alerts;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 
 //classe que controla a tela - controller
@@ -13,7 +15,6 @@ public class ViewController {
     //o que acontece ao clicar no botão
     @FXML           //de preferencia:  on + nome do atributo + ação
     protected void onHelloButtonClick() {  //onHelloButtonClick  - on action / scenebuilder
-        welcomeText.setText("Olá, Tayna!");
-        //System.out.println("Ola yasmin");
+        Alerts.showAlert("Alert Title", null, "OIIII", Alert.AlertType.INFORMATION);
     }
 }

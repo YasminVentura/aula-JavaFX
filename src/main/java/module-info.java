@@ -5,4 +5,6 @@ module org.example.javafxproject {
 
     opens org.example.javafxproject to javafx.fxml;
     exports org.example.javafxproject;
+    exports gui;
+    opens gui to javafx.fxml;
 }
